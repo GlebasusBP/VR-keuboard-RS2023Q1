@@ -1,5 +1,10 @@
-import getHello from "./modules/.getHello";
+import renderKeyboard from "./modules/renderKeyboard";
+import keysArr from './modules/keys'
+import renderKeys from "./modules/renderKeys";
+import pressPhisicsKey from "./modules/pressPhisicsKey";
 
 window.addEventListener('DOMContentLoaded', ()=>{
-  getHello();
+  renderKeyboard();
+  renderKeys(keysArr);
+  pressPhisicsKey();
 });
